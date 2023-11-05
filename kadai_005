@@ -1,1 +1,5 @@
+Upper_Line = 10
+Under_Line = 20
+Height =5
 
+print((Upper_Line + Under_Line) * Height/2)
