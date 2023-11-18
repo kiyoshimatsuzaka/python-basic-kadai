@@ -1,0 +1,11 @@
+def add_two_arguments(price, tax):
+    # 与えられた引数priceと引数taxを加算し、変数totalに代入する
+    total = price + price * tax
+
+    total2 = int(total)
+
+    # 変数$totalの値を出力する
+    print(f"{total2}円")
+
+# 関数を呼び出し、引数として購入金額と送料を渡す
+add_two_arguments(1200, 0.1) 
