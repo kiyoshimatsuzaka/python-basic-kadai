@@ -1,0 +1,20 @@
+class Human:
+    def __init__(self):
+        self.name = ""
+        self.age = ""
+
+    # メソッドを定義する
+    def printinfo(self, name, age):
+        self.name = name
+        self.age = age
+
+    def show_name(self):
+        print(self.name)
+        print(self.age)
+
+# インスタンス化する
+human = Human()
+
+# メソッドにアクセスして実行する
+human.printinfo("太郎", 40)
+human.show_name()
