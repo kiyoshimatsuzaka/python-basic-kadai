@@ -1,0 +1,27 @@
+class Human:
+  def __init__(self, name, age):
+    # 属性の定義
+    self.name = name
+    self.age = age
+
+  def check_adult(self):
+    if self.age >= 20:
+      print("{} は大人です".format(self.name))
+    else:
+      print("{} は未成年です".format(self.name))
+
+# インスタンスを作成
+data = [["一郎", 10],
+        ["二朗", 12],
+        ["三郎", 20],
+        ["四郎", 22],
+        ["五郎", 30]]
+
+# human_listへインスタンスのリストを追加
+human_list = []
+for d in data:
+  human_list.append((d[0], d[1]))
+
+# human_listより各インスタンスのメソッドを実行
+for h in human_list:
+  Human(h[0], h[1]).check_adult()
